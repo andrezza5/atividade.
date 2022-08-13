@@ -1,0 +1,35 @@
+
+Javascript
+
+class Pessoa
+{
+	static totalPessoas = 0
+	_nome
+	_idade
+
+	constructor (nome, idade) {
+		this._nome = nome
+		this._idade = idade
+		Pessoa.totalPessoas += 1
+
+	get totalPessoas() {
+		return Pessoa.totalPessoas
+	}
+	
+	set nome(novoNome) {
+		this._nome = novoNome
+	}
+
+	set nome(novaIdade) {
+		this._idade = novaIdade
+	}
+
+}
+
+	let pessoa1 = new Pessoa('Paulo',33)
+	let pessoa2 = new Pessoa('Beto',22)
+	let pessoa3 = new Pessoa('Claudia',25)
+
+	console.log(Pessoa.totaPessoas)	
+
+
